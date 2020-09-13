@@ -1,0 +1,51 @@
+Note de correction de l'exercice
+-*-*--*-*--*-*--*-*--*-*--*-*--*-*-
+
+== HTML5 == Ce qu'il faut retenir
+
+1- une page html comprends 2 grandes parties:
+    - Le head
+    - Le body: le body comprend 3 grandes parties:
+      - le header
+      - le main
+      - le footer
+
+2- le titre principal d'une page doit être mis dans la balise h1
+
+3- un menu de navigation qu'il soit dans le  header ou le footer doit être mis dans une balise nav
+
+-*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*-
+
+== CSS3 == Ce qu'il faut retenir
+
+1- Eviter de mettre des styles css directement sur des balises. il faut utiliser des classes css sinon ça peut créer des effets indésirtables.
+  Attention: dans certains cas il peut être interessant de mettre du style directement sur des balises.
+  exemple: je souhaite enlever le souligne des balises <a> sur tout mon site.
+  a {
+    text-decoration: none;
+  }
+
+2- Eviter des noms de class ambigüe. les noms de class comme "div", "div1", "paragraphe"... sont à éviter.
+    le nom d'une class doit exprimer de façon explicite l'élément auquel la class est appliquée.
+    Exemple:
+      la class de l'image d'un produit peut être "product-image",
+      la class du text de description d'un produit peut être "product-description",
+      la class du prix d'un produit peut être "product-price",
+
+    on peut aussi jouer avec le pluriel et le singulier pour définir les noms de class. Une balise <div>
+    qui contient plusieurs produits peut avoir la class "products" et une balise <div>
+    qui contient un seul produit la class "product"
+
+3- Eviter autant que possible de dupliquer les styles. si plusieurs éléments ont le même style,
+  il faut faire le style une seule fois sur une class puis appliquer la class à tous les autres éléments
+
+4- Utiliser les flexbox pour faire de la mise en page
+
+5- Pour le responsive design pensez mobile-first: on fait d'abord le css pour la version mobile puis on l'adapte pour la version desktop
+
+-*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*-
+
+== Documentations utiles ==
+
+ - Apprendre à utiliser les flex box de façon ludique: http://flexboxfroggy.com/#fr
+ - media queries https://developer.mozilla.org/fr/docs/Web/CSS/Requ%C3%AAtes_m%C3%A9dia/Utiliser_les_Media_queries
